@@ -1,7 +1,13 @@
 <?php
-$pdo = new PDO("mysql:host=localhost;dbname=gestion_scolarite;charset=utf8", "root", "");
+$host = "localhost";
+$dbname = "gestion_scolarite";
+$user = "root";
+$pass = "";
 
-if (!$pdo) {
-    die("erreur connexion");
+try {
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $user, $pass);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    die("Erreur de connexion : " . $e->getMessage());
 }
-?>
+?>  tiens
