@@ -1,8 +1,12 @@
 <?php include 'header.php'; ?>
-<div class="hero">
-  <h1>🎓 Application de Gestion de Scolarité</h1>
-  <p>Gérez les étudiants, les notes et les relevés en toute simplicité.<br>
-     Plateforme dédiée à l'USTHB – Faculté d'Informatique.</p>
-  <a href="login.php" class="btn">Se connecter</a>
-</div>
+
+<h1>Application de Gestion de Scolarité</h1>
+
+<p>
+Gerer les etudiants, les notes et les releves facilement.<br>
+Plateforme pour l'USTHB.
+</p>
+
+<a href="login.php">Se connecter</a>
+
 <?php include 'footer.php'; ?>
