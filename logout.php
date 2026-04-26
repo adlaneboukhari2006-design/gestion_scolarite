@@ -1,6 +1,6 @@
 <?php
 session_start();
-session_destroy();
-header("Location: index.php");
+session_destroy();//supprime info d'utilisateur
+header("Location: index.php");//Redirection index.php
 exit;
 ?>
